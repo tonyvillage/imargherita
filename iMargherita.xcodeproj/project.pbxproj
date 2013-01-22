@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F3EBCEF16AF107A00E5D979 /* main_menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F3EBCED16AF107A00E5D979 /* main_menu.png */; };
+		5F3EBCF016AF107A00E5D979 /* main_menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F3EBCEE16AF107A00E5D979 /* main_menu@2x.png */; };
 		5FE9055B16AEED980003C7E2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FE9055A16AEED980003C7E2 /* UIKit.framework */; };
 		5FE9055D16AEED980003C7E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FE9055C16AEED980003C7E2 /* Foundation.framework */; };
 		5FE9055F16AEED980003C7E2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FE9055E16AEED980003C7E2 /* CoreGraphics.framework */; };
@@ -18,9 +20,13 @@
 		5FE9057116AEED980003C7E2 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FE9057016AEED980003C7E2 /* Default@2x.png */; };
 		5FE9057316AEED980003C7E2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FE9057216AEED980003C7E2 /* Default-568h@2x.png */; };
 		5FE9057616AEED980003C7E2 /* iMargherita.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5FE9057416AEED980003C7E2 /* iMargherita.xcdatamodeld */; };
+		5FE9057E16AEEE520003C7E2 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE9057D16AEEE520003C7E2 /* MainMenuViewController.m */; };
+		5FE9058016AEEE800003C7E2 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FE9057F16AEEE800003C7E2 /* Storyboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5F3EBCED16AF107A00E5D979 /* main_menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_menu.png; sourceTree = "<group>"; };
+		5F3EBCEE16AF107A00E5D979 /* main_menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "main_menu@2x.png"; sourceTree = "<group>"; };
 		5FE9055616AEED980003C7E2 /* iMargherita.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMargherita.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FE9055A16AEED980003C7E2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5FE9055C16AEED980003C7E2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -36,6 +42,9 @@
 		5FE9057016AEED980003C7E2 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		5FE9057216AEED980003C7E2 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		5FE9057516AEED980003C7E2 /* iMargherita.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iMargherita.xcdatamodel; sourceTree = "<group>"; };
+		5FE9057C16AEEE520003C7E2 /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
+		5FE9057D16AEEE520003C7E2 /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
+		5FE9057F16AEEE800003C7E2 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +95,11 @@
 			children = (
 				5FE9056B16AEED980003C7E2 /* AppDelegate.h */,
 				5FE9056C16AEED980003C7E2 /* AppDelegate.m */,
+				5FE905BA16AEF9A30003C7E2 /* images */,
 				5FE9057416AEED980003C7E2 /* iMargherita.xcdatamodeld */,
+				5FE9057C16AEEE520003C7E2 /* MainMenuViewController.h */,
+				5FE9057D16AEEE520003C7E2 /* MainMenuViewController.m */,
+				5FE9057F16AEEE800003C7E2 /* Storyboard.storyboard */,
 				5FE9056316AEED980003C7E2 /* Supporting Files */,
 			);
 			path = iMargherita;
@@ -104,6 +117,15 @@
 				5FE9057216AEED980003C7E2 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5FE905BA16AEF9A30003C7E2 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				5F3EBCED16AF107A00E5D979 /* main_menu.png */,
+				5F3EBCEE16AF107A00E5D979 /* main_menu@2x.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +183,9 @@
 				5FE9056F16AEED980003C7E2 /* Default.png in Resources */,
 				5FE9057116AEED980003C7E2 /* Default@2x.png in Resources */,
 				5FE9057316AEED980003C7E2 /* Default-568h@2x.png in Resources */,
+				5FE9058016AEEE800003C7E2 /* Storyboard.storyboard in Resources */,
+				5F3EBCEF16AF107A00E5D979 /* main_menu.png in Resources */,
+				5F3EBCF016AF107A00E5D979 /* main_menu@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +199,7 @@
 				5FE9056916AEED980003C7E2 /* main.m in Sources */,
 				5FE9056D16AEED980003C7E2 /* AppDelegate.m in Sources */,
 				5FE9057616AEED980003C7E2 /* iMargherita.xcdatamodeld in Sources */,
+				5FE9057E16AEEE520003C7E2 /* MainMenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,7 +275,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iMargherita/iMargherita-Prefix.pch";
 				INFOPLIST_FILE = "iMargherita/iMargherita-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -260,7 +288,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iMargherita/iMargherita-Prefix.pch";
 				INFOPLIST_FILE = "iMargherita/iMargherita-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -284,6 +314,7 @@
 				5FE9057B16AEED980003C7E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
