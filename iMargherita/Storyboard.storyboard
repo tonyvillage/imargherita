@@ -171,7 +171,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="avw-sD-xBt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="472" y="-1373"/>
+            <point key="canvasLocation" x="472" y="-1384"/>
         </scene>
         <!--Paese View Controller - Il Paese-->
         <scene sceneID="VGu-RT-bUE">
