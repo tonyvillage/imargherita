@@ -7,6 +7,7 @@
 //
 
 #import "PaeseMappaViewController.h"
+#import "AddressAnnotation.h"
 
 #define METERS_PER_MILE 1609.344
 
@@ -43,7 +44,8 @@
     MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(myLocation, 0.9*METERS_PER_MILE,0.9*METERS_PER_MILE);
     MKCoordinateRegion adjustRegion = [mapView regionThatFits:viewRegion];
     [mapView setRegion:adjustRegion animated:1];
-    [mapView setShowsUserLocation:1];
+    AddressAnnotation *annotation = [[AddressAnnotation alloc] initWithCoordinate:myLocation];
+    [mapView addAnnotation:annotation];
 }
 
 - (void)didReceiveMemoryWarning
