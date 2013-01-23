@@ -145,24 +145,72 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G8w-nV-4tJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1114" y="317"/>
+            <point key="canvasLocation" x="1032" y="-684"/>
         </scene>
-        <!--View Controller - Il Paese-->
-        <scene sceneID="VGu-RT-bUE">
+        <!--Paese Mappa View Controller - Map View Controller-->
+        <scene sceneID="z9x-dG-N7F">
             <objects>
-                <viewController id="1Qn-OI-VRL" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="wwE-DW-PZc">
+                <viewController title="Map View Controller" id="9p7-Y7-HCc" customClass="PaeseMappaViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ww1-WR-PkG">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" id="apv-63-5Jk">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Mappa" id="99o-YI-R2y">
+                        <barButtonItem key="backBarButtonItem" title="Il Paese" id="ZxS-L7-3GC"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="apv-63-5Jk" id="zY7-Jn-VRu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="avw-sD-xBt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="472" y="-1373"/>
+        </scene>
+        <!--Paese View Controller - Il Paese-->
+        <scene sceneID="VGu-RT-bUE">
+            <objects>
+                <viewController id="1Qn-OI-VRL" customClass="PaeseViewController" sceneMemberID="viewController">
+                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="CnB-Lt-8D9">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="top" image="paese.jpg" id="WQ2-88-qPH">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <textView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" id="ukW-V4-FiO">
+                                <rect key="frame" x="0.0" y="240" width="320" height="391"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Margherita di Savoia (I Saléne in dialetto barese) è un comune italiano di 12.380 abitanti della provincia di Barletta-Andria-Trani, in Puglia. Fino al 2004 ha fatto parte della Provincia di Foggia. Già Saline di Barletta, il comune assunse tale denominazione in onore di Margherita di Savoia, prima regina d'Italia nel 1879. È nota per le omonime saline, le più grandi d'Europa e le seconde nel mondo, riconosciute come Riserva Naturale dello Stato (D.M. 10.10.1977) e quindi zona umida di valore internazionale (D.M. 30.05.1979) ai sensi della Convenzione di Ramsar (Iran 1971). Punti di forza dell'offerta turistica della cittadina sono anche il moderno stabilimento termale che utilizza i fanghi e le acque madri contenute nei bacini delle saline, il lunghissimo ed ampio litorale di sabbia ferrosa che ospita circa 90 stabilimenti balneari e, non ultimo, il Museo storico delle Saline, sito in un vecchio magazzino del sale adiacente alla cinquecentesca Torre delle Saline.</string>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                    </scrollView>
                     <navigationItem key="navigationItem" title="Il Paese" id="vpu-CF-fM9">
                         <barButtonItem key="backBarButtonItem" title="Menù" id="Sy0-lw-cN0"/>
+                        <barButtonItem key="rightBarButtonItem" title="Mappa" id="POp-Yw-Tc0">
+                            <connections>
+                                <segue destination="9p7-Y7-HCc" kind="push" id="ybS-kQ-q9f"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="descPaese" destination="ukW-V4-FiO" id="wB7-Wa-JNM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rty-cn-R0t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1119" y="-478"/>
+            <point key="canvasLocation" x="472" y="-684"/>
         </scene>
         <!--Table View Controller - Beach-->
         <scene sceneID="WKz-j2-OCs">
@@ -247,7 +295,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qlf-6A-PHh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1496" y="-478"/>
+            <point key="canvasLocation" x="1470" y="-282"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="MPe-cT-dQc">
@@ -268,11 +316,9 @@
             <point key="canvasLocation" x="140" y="-32"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="MainMenuViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MainMenuViewController.h"/>
-        </class>
-    </classes>
+    <resources>
+        <image name="paese.jpg" width="320" height="240"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
