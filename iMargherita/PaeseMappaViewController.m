@@ -46,6 +46,14 @@
     [mapView setRegion:adjustRegion animated:1];
     AddressAnnotation *annotation = [[AddressAnnotation alloc] initWithCoordinate:myLocation];
     [mapView addAnnotation:annotation];
+    
+    // Diego Stamigni style...
+    //MKPlacemark *placemark = [[MKPlacemark alloc] initWithCoordinate:myLocation addressDictionary:nil];
+    //[self.mapView addAnnotation:placemark];
+    //[self.mapView setCenterCoordinate:myLocation animated:true];
+    // MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(myLocation, 250.0, 250.0);
+    //[self.mapView setRegion:region animated:true];
+
 }
 
 - (void)didReceiveMemoryWarning
