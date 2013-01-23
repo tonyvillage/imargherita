@@ -81,7 +81,6 @@
 		5FE9054B16AEED980003C7E2 = {
 			isa = PBXGroup;
 			children = (
-				5F9DB79616B02C4B0073FC07 /* MapKit.framework */,
 				5FE9055916AEED980003C7E2 /* Frameworks */,
 				5FE9056216AEED980003C7E2 /* iMargherita */,
 				5FE9055716AEED980003C7E2 /* Products */,
@@ -99,10 +98,11 @@
 		5FE9055916AEED980003C7E2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5FE9055A16AEED980003C7E2 /* UIKit.framework */,
-				5FE9055C16AEED980003C7E2 /* Foundation.framework */,
-				5FE9055E16AEED980003C7E2 /* CoreGraphics.framework */,
 				5FE9056016AEED980003C7E2 /* CoreData.framework */,
+				5FE9055E16AEED980003C7E2 /* CoreGraphics.framework */,
+				5FE9055C16AEED980003C7E2 /* Foundation.framework */,
+				5F9DB79616B02C4B0073FC07 /* MapKit.framework */,
+				5FE9055A16AEED980003C7E2 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
