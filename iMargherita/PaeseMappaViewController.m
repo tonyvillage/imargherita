@@ -7,13 +7,12 @@
 //
 
 #import "PaeseMappaViewController.h"
-#import <MapKit/MapKit.h>
 
 #define METERS_PER_MILE 1609.344
 
 @interface PaeseMappaViewController ()
 
-@property (strong, nonatomic) IBOutlet MKMapView *mapView;
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
 
 @end
 
@@ -39,11 +38,12 @@
 -(void)viewWillAppear:(BOOL)animated
 {
     CLLocationCoordinate2D myLocation;
-    myLocation.latitude = 41.373258;
-    myLocation.longitude = 16.149537;
-    MKCoordinateRegion myRegion = MKCoordinateRegionMakeWithDistance(myLocation, 0.9*METERS_PER_MILE,0.9*METERS_PER_MILE);
-    MKCoordinateRegion adjustRegion = [mapView regionThatFits:myRegion];
+    myLocation.latitude = 41.373516;
+    myLocation.longitude = 16.149719;
+    MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(myLocation, 0.9*METERS_PER_MILE,0.9*METERS_PER_MILE);
+    MKCoordinateRegion adjustRegion = [mapView regionThatFits:viewRegion];
     [mapView setRegion:adjustRegion animated:1];
+    [mapView setShowsUserLocation:1];
 }
 
 - (void)didReceiveMemoryWarning

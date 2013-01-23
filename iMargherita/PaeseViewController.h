@@ -1,5 +1,5 @@
 //
-//  PaeseMappaViewController.h
+//  PaeseViewController.h
 //  iMargherita
 //
 //  Created by Sebastiano Ronzulli on 23/01/13.
@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <MapKit/MapKit.h>
 
-@interface PaeseMappaViewController : UIViewController
+@interface PaeseViewController : UIViewController
 
 @end
