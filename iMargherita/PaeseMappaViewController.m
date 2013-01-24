@@ -38,6 +38,13 @@
 
 -(void)viewWillAppear:(BOOL)animated
 {
+    // Declaring and setting the title of the back button item
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Il Paese"
+                                                                   style:UIBarButtonItemStyleDone
+                                                                  target:nil
+                                                                  action:nil];
+    [[self navigationItem] setBackBarButtonItem:backButton];
+    
     CLLocationCoordinate2D myLocation;
     myLocation.latitude = 41.373516;
     myLocation.longitude = 16.149719;

@@ -12,12 +12,14 @@
 @interface PaeseViewController ()
 
 @property (weak, nonatomic) IBOutlet UITextView *paeseTextView;
+@property (weak, nonatomic) IBOutlet UITextView *titleMDS;
 
 @end
 
 @implementation PaeseViewController
 
 @synthesize paeseTextView;
+@synthesize titleMDS;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -33,8 +35,12 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     UIScrollView *tempScrollView = (UIScrollView *)self.view;
-    tempScrollView.contentSize=CGSizeMake(320,630);
+    tempScrollView.contentSize=CGSizeMake(320,670);
     [paeseTextView setScrollEnabled:0];
+    // Makes the title bold
+    UIFont *boldFont = [UIFont boldSystemFontOfSize:[UIFont systemFontSize]];
+    [titleMDS setFont:boldFont];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -45,6 +51,7 @@
 
 - (void)viewDidUnload {
     [self setPaeseTextView:nil];
+    [self setTitleMDS:nil];
     [super viewDidUnload];
 }
 @end

@@ -186,11 +186,18 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <textView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" id="ukW-V4-FiO">
-                                <rect key="frame" x="0.0" y="240" width="320" height="391"/>
+                                <rect key="frame" x="0.0" y="279" width="320" height="391"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">Margherita di Savoia (I Saléne in dialetto barese) è un comune italiano di 12.380 abitanti della provincia di Barletta-Andria-Trani, in Puglia. Fino al 2004 ha fatto parte della Provincia di Foggia. Già Saline di Barletta, il comune assunse tale denominazione in onore di Margherita di Savoia, prima regina d'Italia nel 1879. È nota per le omonime saline, le più grandi d'Europa e le seconde nel mondo, riconosciute come Riserva Naturale dello Stato (D.M. 10.10.1977) e quindi zona umida di valore internazionale (D.M. 30.05.1979) ai sensi della Convenzione di Ramsar (Iran 1971). Punti di forza dell'offerta turistica della cittadina sono anche il moderno stabilimento termale che utilizza i fanghi e le acque madri contenute nei bacini delle saline, il lunghissimo ed ampio litorale di sabbia ferrosa che ospita circa 90 stabilimenti balneari e, non ultimo, il Museo storico delle Saline, sito in un vecchio magazzino del sale adiacente alla cinquecentesca Torre delle Saline.</string>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Margherita di Savoia (Italia)" id="95D-vI-GRw">
+                                <rect key="frame" x="0.0" y="241" width="320" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -206,6 +213,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="paeseTextView" destination="ukW-V4-FiO" id="SPC-Ep-4yn"/>
+                        <outlet property="titleMDS" destination="95D-vI-GRw" id="tZY-FX-lXq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rty-cn-R0t" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -319,23 +327,6 @@
     <resources>
         <image name="paese.jpg" width="320" height="240"/>
     </resources>
-    <classes>
-        <class className="MainMenuViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MainMenuViewController.h"/>
-        </class>
-        <class className="PaeseMappaViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PaeseMappaViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
-            </relationships>
-        </class>
-        <class className="PaeseViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PaeseViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="paeseTextView" candidateClass="UITextView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
